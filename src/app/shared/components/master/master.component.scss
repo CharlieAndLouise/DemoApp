@@ -1,0 +1,36 @@
+.screen {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: 
+  "header header" //header spans two columns
+  "left content"
+  "footer footer";
+  grid-template-rows: auto 1fr auto;
+}
+
+.banner {
+  grid-area: header;
+  background-color: lightblue;
+  height: 100px;
+}
+
+.left {
+  grid-area: left;
+  background-color: lightgreen;
+}
+
+.content {
+  grid-area: content;
+  background-color: lightcoral;
+  //make content fill all available space
+  // can I use grow?
+
+  height: 100%;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: lightgray;
+  height: 50px;
+}

@@ -1,0 +1,12 @@
+<div class="screen">
+  <div class="banner">
+    <ng-content select="[banner]"></ng-content>
+    <ng-container *ngIf="!hasBanner">
+      <!-- Default banner content -->
+      <div class="default-banner">Welcome to DemoApp!</div>
+    </ng-container>
+  </div>
+  <div class="left"></div>
+  <div class="content"></div>
+  <div class="footer"></div>
+</div>
